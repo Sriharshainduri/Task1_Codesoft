@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sriharsha Induri | Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f4f4f7;
+        }
+        /* NAVBAR */
+        nav {
+            background: #1f1f1f;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #4db8ff;
+        }
+        /* HERO */
+        .hero {
+            padding: 80px 60px;
+            background: linear-gradient(to right, #2b2b2b, #1f1f1f);
+            color: white;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            width: 70%;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            background: #4db8ff;
+            padding: 12px 25px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* ABOUT */
+        .about {
+            display: flex;
+            padding: 60px;
+            background: white;
+            border-radius: 10px;
+            width: 85%;
+            margin: auto;
+            margin-top: -40px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+            gap: 40px;
+        }
+        .about img {
+            width: 260px;
+            height: 330px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+        }
+        .about h2 {
+            margin-top: 0;
+            color: #222;
+        }
+        .about p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        /* SECTION TITLES */
+        h2.section-title {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: #222;
+        }
+
+        /* SKILLS */
+        .skills {
+            width: 85%;
+            margin: auto;
+        }
+        .skill-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-size: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* PROJECTS */
+        .projects {
+            width: 85%;
+            margin: auto;
+        }
+        .project-card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+        }
+        .project-card h3 {
+            margin-top: 0;
+        }
+
+        /* CONTACT */
+        .contact {
+            padding: 40px 60px;
+            background: #1f1f1f;
+            color: white;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 12px;
+            background: #171717;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo"><b>Sriharsha Portfolio</b></div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <h1>Sriharsha Induri</h1>
+        <p>
+            Computer Science Engineer, Web Developer and Machine Learning Enthusiast.
+            Passionate about building real-world solutions using modern technologies.
+        </p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </section>
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <img src="pic.jpg" alt="Sriharsha Photo">
+
+        <div>
+            <h2>About Me</h2>
+            <p>
+                I am Sriharsha, a dedicated and hardworking Computer Science student with strong skills
+                in Web Development, Machine Learning, and problem-solving. I enjoy turning ideas into
+                functional applications and contributing to impactful projects. My learning mindset helps
+                me explore new tools, technologies, and frameworks with enthusiasm.
+            </p>
+            <p>
+                With hands-on experience in C, Java, Python, HTML, CSS, Python, Flask, ML algorithms,
+                and IoT-based solutions. I aim to create efficient, clean, and user-centric applications.
+                I believe in continuous improvement and enjoy solving both technical and real-world challenges.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <h2 class="section-title" id="skills">Skills</h2>
+    <section class="skills">
+        <div class="skill-box">Programming: C, Java, Python</div>
+        <div class="skill-box">Frontend: HTML, CSS, JavaScript</div>
+        <div class="skill-box">Backend: Flask, APIs</div>
+        <div class="skill-box">Machine Learning: Random Forest, XGBoost</div>
+        <div class="skill-box">IoT & Embedded: Arduino, Sensors, MPU6050, HC-05</div>
+        <div class="skill-box">Tools: Git, Jupyter, VS Code</div>
+    </section>
+    <!-- PROJECTS -->
+    <h2 class="section-title" id="projects">Projects</h2>
+    <section class="projects">
+        <div class="project-card">
+            <h3>Liver Disease Prediction System (Random Forest + XGBoost)</h3>
+            <p>
+                Developed a medical prediction system using the ILPD dataset. Applied SMOTE for class balancing,
+                StandardScaler for preprocessing, and integrated ML models in a Flask web application.
+                Includes accuracy, precision, recall, and confusion matrix evaluation for decision support.
+            </p>
+        </div>
+        <div class="project-card">
+            <h3>VoiceLock – AES-256 Secure File Encryption</h3>
+            <p>
+                Built a voice-based authentication simulation system for file locking and unlocking.
+                Implemented AES-256 encryption, SHA-256 hashing, and designed a clean Tailwind CSS UI for user interaction.
+            </p>
+        </div>
+        <div class="project-card">
+            <h3>Gesture Vocalizer</h3>
+            <p>
+                Designed a portable system that converts hand gestures into text output using flex sensors,
+                MPU6050 accelerometer, and Arduino. Built for assisting individuals with speech or hearing difficulties.
+            </p>
+        </div>
+
+    </section>
+    <!-- RESUME -->
+    <h2 class="section-title" id="resume">Resume</h2>
+    <div style="text-align:center; margin-bottom:40px;">
+        <a class="btn" href="Sriharsha_resume1.pdf" download>Download My Resume</a>
+    </div>
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: sriharshainduri@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/Sriharshainduri" style="color:#4db8ff;">View Profile</a></p>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        Sriharsha - All Rights Reserved.
+    </footer>
+</body>
+</html>
